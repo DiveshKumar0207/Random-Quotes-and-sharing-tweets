@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- darkMode toggle button -->
+    <div
+      id="darkMode_button"
+      class="hover:black group absolute right-16 top-10 z-10 m-6 w-fit cursor-pointer rounded-full bg-emerald-100/80 p-3 shadow-md hover:bg-slate-950 dark:bg-emerald-100/80 dark:hover:bg-slate-700"
+    >
+      <svg
+        id="lightMode_svg"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="bi bi-brightness-high-fill w-6 group-hover:text-emerald-100/80"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </svg>
+      <svg
+        id="darkMode_svg"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="bi bi-moon-stars-fill hidden w-6 group-hover:text-emerald-100/80"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </svg>
+    </div>
+    <!-- toggle button end -->
+
+    <!-- container  -->
+    <div
+      class="grid h-screen w-screen place-items-center rounded bg-zinc-400 dark:bg-slate-950"
+    >
+      <div
+        class="relative h-[32rem] w-3/6 min-w-[26rem] bg-zinc-300 p-4 dark:bg-slate-800"
+      >
+        <!-- top part -->
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-quote w-16 drop-shadow-2xl dark:text-white"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+            />
+          </svg>
+        </div>
+
+        <!-- ======textarea for qoute====== -->
+        <div
+          class="mx-12 my-4 h-4/6 overflow-y-auto rounded bg-zinc-200 p-6 font-mono drop-shadow-md scrollbar-hide dark:bg-slate-600 dark:text-white"
+        >
+          <div id="qoute_textarea" class="text-[1.15rem] antialiased"></div>
+          <div
+            id="author_textarea"
+            class="my-4 text-right text-3xl font-black"
+          ></div>
+        </div>
+
+        <!-- next quote button -->
+        <div id="qoute_button" class="grid place-items-center">
+          <button
+            class="w-40 rounded-sm bg-black p-2 text-yellow-50 drop-shadow-md hover:bg-slate-900"
+          >
+            Quote
+          </button>
+        </div>
+
+        <!-- share button -->
+        <div
+          id="share_button"
+          class="absolute right-8 top-7 rounded-full hover:cursor-pointer"
+        >
+          <svg
+            class="w-9 dark:text-emerald-100"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-share-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+            />
+          </svg>
+          <!-- <svg
+            class="w-9 dark:text-emerald-100"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-twitter-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+            />
+          </svg> -->
+        </div>
+        <!-- share button end -->
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
